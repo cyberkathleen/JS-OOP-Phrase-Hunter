@@ -64,7 +64,7 @@ function resetGameboard() {
 
   // Reset all heart images to liveHeart.png
   heartImages.forEach(heart => {
-    heart.src = 'images/liveHeart.png';
+    heart.src = 'images/liveCat.png';
   });
 
   // Reset overlay classes (removes 'win' or 'lose' from previous game)

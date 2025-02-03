@@ -20,7 +20,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "DynaPuff", serif;
 }
 
 body {
@@ -28,6 +28,7 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
+  background-image: linear-gradient(to bottom, #3b41c5 0%, #a981bb 79%, #ffc8a9 100%);
 }
 
 li, ol, ul {
@@ -86,7 +87,7 @@ button {
 /* Title */
 
 .header {
-  color: #3a3f58;
+  color: #ffe9d9;
 }
 
 
@@ -110,8 +111,8 @@ button {
 
 
 .show {
-  color: #fff;
-  background-color: #4ac0d5;
+  color: #000000;
+  background-color: #aeb2ff;
   font-size: 20px;
   height: 65px;
   width: 65px;
@@ -129,16 +130,20 @@ button {
   display: flex;
   justify-content: center;
 }
+.key:hover {
+  background: #ffc8a9;
+  transform: scale(1.1);
+}
 
 .chosen {
-  background: #3a3f58;
+  background: #00741b;
   border-radius: 5px;
   font-size: var(--font-size-medium);
   color: #FFFFFF;
 }
 
 .wrong {
-  background: #f7a964;
+  background: #a80011;
   color: #FFFFFF;
 }
 
@@ -180,7 +185,7 @@ button {
 }
 
 .start {
-  background-color: #3a3f58;
+  background-image: linear-gradient(to bottom, #3b41c5 0%, #a981bb 79%, #ffc8a9 100%);
 }
 
 .start a {
@@ -188,7 +193,7 @@ button {
 }
 
 .win {
-  background-color: var(--color-win);
+  background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
 }
 
 .win a {
@@ -196,7 +201,7 @@ button {
 }
 
 .lose {
-  background-color: #f5785f;
+  background-image: linear-gradient(to top, #ff8177 0%, #ff867a 0%, #ff8c7f 11%, #f99185 42%, #cf556c 68%, #b12a5b 100%);
 }
 
 .lose a {

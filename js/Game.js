@@ -81,7 +81,7 @@ class Game {
     const hearts = document.querySelectorAll('.tries img');
     
     // Replace live heart with lost heart
-    hearts[this.missed].src = "images/lostHeart.png";
+    hearts[this.missed].src = "images/lostCat.png";
     this.missed++;
 
     // If the player is out of lives, end the game
