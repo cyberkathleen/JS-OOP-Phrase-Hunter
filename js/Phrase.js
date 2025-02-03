@@ -49,8 +49,7 @@ class Phrase {
 
     // Change the CSS class from 'hide' to 'show'
     matchingLetters.forEach(letter => {
-      letter.classList.remove('hide');
-      letter.classList.add('show');
+      letter.classList.replace('hide', 'show');
     });
   }
 }

@@ -101,12 +101,11 @@ class Game {
 
     // Display a win or loss message
     const message = document.querySelector('#game-over-message');
-    overlay.classList.remove = 'start';
     if (won) {
-      overlay.classList.add = 'win';
+      overlay.className = 'win';
       message.textContent = "Congratulations! You Won!";
     } else {
-      overlay.classList.add = 'lose';
+      overlay.className = 'lose';
       message.textContent = "Game Over! Try Again!";
     }
   }
