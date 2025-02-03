@@ -15,7 +15,7 @@ class Phrase {
     const phraseUl = document.querySelector('#phrase ul');
     phraseUl.innerHTML = '';
 
-    this.phrase.forEach(char => {
+    for (let char of this.phrase) {
       const li = document.createElement('li');
       
       // Use the 'letter' or the 'space' CSS class depending on the character
@@ -23,12 +23,12 @@ class Phrase {
         li.classList.add('space');
         li.textContent = ' ';
       } else {
-        li.classList.add(`hide letter ${char}`);
+        li.classList.add('hide', 'letter', char);
         li.textContent = char;
       }
 
       phraseUl.appendChild(li);
-    });
+    }
   }
 
   /**
@@ -37,7 +37,7 @@ class Phrase {
    * @returns {boolean} - True if the letter is in the phrase, otherwise false
    */
   checkLetter(letter) {
-    return this.phrase.include(letter);
+    return this.phrase.includes(letter);
   }
 
   /**
