@@ -130,21 +130,26 @@ button {
   display: flex;
   justify-content: center;
 }
+
 .key:hover {
   background: #ffc8a9;
   transform: scale(1.1);
 }
 
-.chosen {
+.chosen,
+.chosen:hover {
   background: #00741b;
   border-radius: 5px;
   font-size: var(--font-size-medium);
   color: #FFFFFF;
+  transform: none;
 }
 
-.wrong {
+.wrong,
+.wrong:hover {
   background: #a80011;
   color: #FFFFFF;
+  transform: none;
 }
 
 .btn__reset {
